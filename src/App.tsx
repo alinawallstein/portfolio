@@ -115,7 +115,7 @@ useEffect(() => {
 
             <div className="heroImage">
               <img 
-                src="/public/profil.png" 
+                src="/profil.png" 
                 alt="Portrait von Alina Wallstein" 
                 className="profileImage"
               />
