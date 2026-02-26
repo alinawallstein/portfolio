@@ -112,14 +112,13 @@ useEffect(() => {
                 Studentin im Studiengang Internationale Medieninformatik an der Hochschule für Technik und Wirtschaft Berlin (HTW Berlin), mit Fokus auf moderne Frontend-Entwicklung (React), 3D-Webtechnologien und UI/UX-Konzeption.
               </p>
             </div>
-
             <div className="heroImage">
-              <img 
-                src="/profil.png" 
-                alt="Portrait von Alina Wallstein" 
-                className="profileImage"
-              />
-            </div>
+            <img 
+              src="/profil.png" 
+              alt="Portrait von Alina Wallstein" 
+              className="profileImage"
+            />
+          </div>  
           </div>
         </section>
 
