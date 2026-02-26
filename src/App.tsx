@@ -210,8 +210,7 @@ useEffect(() => {
   <h3>Projekt – Gimme Gear (Sommersemester 2025)</h3>
 
   <div className="gimmeGearCard">
-    <img 
-      <img 
+    <img
       src="/gimmegear.png"
       alt="Gimme Gear Logo" 
       className="gimmeGearLogo"
