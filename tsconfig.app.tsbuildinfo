@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/global.d.ts","./src/main.tsx","./src/r3f-jsx.disabled.d.ts","./src/react-three-fiber.d.ts","./src/vite-env.d.ts","./src/components/coffeeviewer.tsx","./src/components/shaderbg.tsx"],"errors":true,"version":"5.9.3"}
