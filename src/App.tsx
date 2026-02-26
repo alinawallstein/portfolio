@@ -197,7 +197,7 @@ useEffect(() => {
     </div>
 
     <div className="helsinkiGallery">
-      <img src="/helsinki.jpg" alt="Helsinki Impression 3" />
+      <img src="/helsinki.jpg" alt="Helsinki Impression" />
     </div>
   </div>
 </section>

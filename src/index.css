@@ -285,9 +285,8 @@ body {
 }
 
 .helsinkiGallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .helsinkiGallery img {
