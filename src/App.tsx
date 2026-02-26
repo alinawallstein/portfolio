@@ -211,7 +211,8 @@ useEffect(() => {
 
   <div className="gimmeGearCard">
     <img 
-      src="/public/gimmegear.png" 
+      <img 
+      src="/gimmegear.png"
       alt="Gimme Gear Logo" 
       className="gimmeGearLogo"
     />
