@@ -21,8 +21,12 @@ export default function ProjectAutohaus() {
 
           {/* Preview-Bereich */}
           <div className="browserBody">
-        <div className="previewPlaceholder">
-             <img className="previewImg" src="/autohaus.png" alt="Autohaus Website Preview" />
+       <div className="browserBody">
+            <img 
+                className="previewImg" 
+                src="/autohaus.png" 
+                alt="Autohaus Website Preview" 
+            />
             </div>
             </div>
             </div>
