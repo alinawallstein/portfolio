@@ -33,7 +33,7 @@ export default function ShaderBG() {
           uAmplitude={1}
           uDensity={1.2}
           uFrequency={5.5}
-          uSpeed={0.2}
+          uSpeed={0.04}
           uStrength={3.8}
           uTime={0}
           wireframe={false}
