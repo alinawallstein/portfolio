@@ -494,7 +494,36 @@ body {
   box-shadow: 0 0 14px rgba(131,159,219,0.6);
   z-index: 100000;
 }
+.navBrand{
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.2px;
+  user-select: none;
+}
 
+.brandFirst{
+  font-size: 16px;
+  font-weight: 400;          /* light */
+  opacity: 0.9;
+}
+
+.brandLast{
+  font-size: 16px;
+  font-weight: 700;          /* bold */
+}
+
+/* Optional: subtiler Hover (sehr clean) */
+.navBrand:hover .brandLast{
+  text-shadow: 0 0 14px rgba(131,159,219,0.45);
+}
+@media (max-width: 520px){
+  .navBrand{ gap: 8px; }
+  .brandFirst, .brandLast{ font-size: 14px; }
+  .brandLast{ letter-spacing: 1.1px; }
+}
 
 /* =========================
    MOBILE VERSION

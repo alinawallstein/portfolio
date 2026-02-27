@@ -70,14 +70,15 @@ useEffect(() => {
   return (
     <header className="navWrap">
       <nav className="navBar">
-        <a href="#top" className="navBrand" onClick={closeMenu}>
-          Alina Wallsteins Portfolio
-        </a>
+        <a href="#top" className="navBrand" onClick={closeMenu} aria-label="Zur Startseite">
+            <span className="brandIcon">💻</span>
+            <span className="brandFirst">Alina</span>
+            <span className="brandLast">Wallstein</span>
+       </a>
 
         <button
           className="navBurger"
-          onClick={() => setOpen(!open)}
-        >
+          onClick={() => setOpen(!open)}>
           <span />
           <span />
           <span />
@@ -89,7 +90,7 @@ useEffect(() => {
             className={active === "about" ? "active" : ""}
             onClick={closeMenu}
           >
-            Über mich
+            Profil
           </a>
 
           <a
@@ -97,7 +98,7 @@ useEffect(() => {
             className={active === "projects" ? "active" : ""}
             onClick={closeMenu}
           >
-            Projekte
+            Arbeiten
           </a>
 
           <a
@@ -105,7 +106,7 @@ useEffect(() => {
             className={active === "skills" ? "active" : ""}
             onClick={closeMenu}
           >
-            Skills
+            Fähigkeiten
           </a>
 
           <a
