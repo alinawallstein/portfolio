@@ -478,6 +478,23 @@ body {
   margin: 4px 0;
   border-radius: 2px;
 }
+.scrollProgress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  transform-origin: left;
+  background: linear-gradient(
+  90deg,
+  #a14be2,
+  #cb81ff,
+  #5f01c4
+);
+  box-shadow: 0 0 14px rgba(131,159,219,0.6);
+  z-index: 100000;
+}
+
 
 /* =========================
    MOBILE VERSION

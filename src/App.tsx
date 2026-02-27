@@ -4,9 +4,9 @@ import CoffeeViewer from "./components/CoffeeViewer";
 import ProjectAutohaus from "./components/ProjectAutohaus";
 import AnimatedSection from "./components/AnimatedSection";
 import IntroShader from "./components/IntroShader";
-
 import { useEffect, useState, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -148,6 +148,21 @@ export default function App() {
       document.body.style.overflow = "auto";
     };
   }, [showIntro, skipIntro]);
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+useEffect(() => {
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    const docHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+
+    const progress = scrollTop / docHeight;
+    setScrollProgress(progress);
+  };
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   return (
     <>
@@ -221,6 +236,10 @@ export default function App() {
       </AnimatePresence>
 
       <Navbar />
+      <div
+      className="scrollProgress"
+      style={{ transform: `scaleX(${scrollProgress})` }}
+    />
       <ShaderBG />
 
       <main className="layout">
