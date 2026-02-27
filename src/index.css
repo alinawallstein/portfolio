@@ -446,32 +446,21 @@ body {
   text-decoration: none;
   color: rgba(255,255,255,0.85);
   font-size: 14px;
-  padding: 6px 10px;
+  padding: 6px 12px;
   border-radius: 999px;
-  transition: 0.2s ease;
+  transition: background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
   position: relative;
 }
+
+
 .navLinks a.active {
   color: white;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 
+    0 0 12px rgba(131,159,219,0.4);
 }
 
-.navLinks a:hover {
-  background: rgba(255,255,255,0.12);
-  color: white;
-}
-.navLinks a.active::after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 3px;
-  border-radius: 10px;
-
-  background: rgba(131,159,219,0.8);
-  box-shadow: 0 0 12px rgba(131,159,219,0.6);
-}
 
 /* Burger */
 .navBurger {

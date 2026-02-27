@@ -1,5 +1,4 @@
 import "./index.css";
-
 import ShaderBG from "./components/ShaderBG";
 import CoffeeViewer from "./components/CoffeeViewer";
 import ProjectAutohaus from "./components/ProjectAutohaus";
@@ -13,29 +12,58 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("about");
 
-  useEffect(() => {
-    const sections = document.querySelectorAll("section[id]");
+useEffect(() => {
+  const ids = ["about", "projects", "skills", "contact"] as const;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActive(entry.target.id);
-          }
-        });
-      },
-      {
-        rootMargin: "-40% 0px -50% 0px",
-        threshold: 0
-      }
-    );
+ const getActive = () => {
+  // ✅ Wenn fast ganz unten: Contact aktiv
+  const bottomGap = 40;
+  const scrolledToBottom =
+    window.innerHeight + window.scrollY >=
+    document.documentElement.scrollHeight - bottomGap;
 
-    sections.forEach((section) => observer.observe(section));
+  if (scrolledToBottom) {
+    setActive("contact");
+    return;
+  }
 
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
-    };
-  }, []);
+  // Messpunkt etwas mittiger (stabiler)
+  const probeY = window.innerHeight * 0.45;
+
+  let current: (typeof ids)[number] = "about";
+
+  for (const id of ids) {
+    const el = document.getElementById(id);
+    if (!el) continue;
+
+    const rect = el.getBoundingClientRect();
+    if (rect.top <= probeY && rect.bottom >= probeY) {
+      current = id;
+      break;
+    }
+  }
+
+  setActive(current);
+};
+
+  // Initial + on scroll
+  getActive();
+
+  let raf = 0;
+  const onScroll = () => {
+    cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(getActive);
+  };
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+
+  return () => {
+    cancelAnimationFrame(raf);
+    window.removeEventListener("scroll", onScroll);
+    window.removeEventListener("resize", onScroll);
+  };
+}, []);
 
   const closeMenu = () => setOpen(false);
 
