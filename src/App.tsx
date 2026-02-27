@@ -71,7 +71,7 @@ useEffect(() => {
     <header className="navWrap">
       <nav className="navBar">
         <a href="#top" className="navBrand" onClick={closeMenu}>
-          Alina
+          Alina Wallsteins Portfolio
         </a>
 
         <button
@@ -89,7 +89,7 @@ useEffect(() => {
             className={active === "about" ? "active" : ""}
             onClick={closeMenu}
           >
-            About
+            Über mich
           </a>
 
           <a
@@ -97,7 +97,7 @@ useEffect(() => {
             className={active === "projects" ? "active" : ""}
             onClick={closeMenu}
           >
-            Projects
+            Projekte
           </a>
 
           <a
@@ -113,7 +113,7 @@ useEffect(() => {
             className={active === "contact" ? "active" : ""}
             onClick={closeMenu}
           >
-            Contact
+            Kontakt
           </a>
         </div>
       </nav>
