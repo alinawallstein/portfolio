@@ -682,6 +682,49 @@ body {
   animation: wipPulse 1.6s ease-in-out infinite;
 }
 
+/* Helsinki: 1 Spalte + padding kleiner */
+  .helsinkiCard {
+    display: grid;
+    grid-template-columns: minmax(320px,1.15fr) minmax(320px,0.85);
+    gap: 50px;
+    align-items: start;
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .helsinkiGallery {
+  display: flex;
+  justify-content: center;
+  min-width: 0; 
+}
+
+  .helsinkiGallery img {
+    max-width: 100%;
+    max-width:600px;
+  }
+  .helsinkiContent {
+  min-width: 0; 
+}
+.helsinkiContent h3 {
+  margin-bottom: 14px;
+  line-height: 1.15;
+}
+.helsinkiContent p {
+  opacity: 0.8;
+  line-height: 1.65;
+  margin-bottom: 14px;
+  max-width: 60ch; 
+}
+.helsinkiContent ul {
+  padding-left: 18px;
+  opacity: 0.85;
+}
+.helsinkiContent li {
+  margin-bottom: 10px;
+}
+
 @keyframes wipPulse{
   0%,100%{ transform: scale(1); opacity: .9; }
   50%{ transform: scale(1.03); opacity: 1; }
@@ -923,16 +966,7 @@ body {
     justify-self: start;
   }
 
-  /* Helsinki: 1 Spalte + padding kleiner */
-  .helsinkiCard {
-    grid-template-columns: 1fr;
-    gap: 22px;
-    padding: 22px;
-  }
-
-  .helsinkiGallery img {
-    max-width: 100%;
-  }
+  
 
   /* CV Button: volle Breite */
   .cvButton {

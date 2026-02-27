@@ -322,7 +322,7 @@ useEffect(() => {
 
           <AnimatedSection className="hero">
             <section className="section">
-              <h3>3D Projekt – Kaffeemaschine (Maya)</h3>
+              <h3>3D-Modellierung – Kaffeemaschine (Autodesk Maya)</h3>
 
               <div className="projectCard">
                 <CoffeeViewer />
@@ -330,14 +330,24 @@ useEffect(() => {
                 <div className="projectContent">
                   <h4>Hard-Surface Modeling in Autodesk Maya</h4>
                   <p>
-                    Detailliertes 3D-Modell einer Kaffeemaschine mit Fokus auf saubere
-                    Topologie, proportionale Formgebung und präsentationsfähiges Lighting im Web.
-                  </p>
-                  <ul>
-                    <li>Subdivision / Edge Flow</li>
-                    <li>Detailmodellierung (Buttons, Gehäuse, Auslass)</li>
-                    <li>Web-Preview als interaktiver Viewer</li>
-                  </ul>
+  Als Leistungsnachweis entstand eine detaillierte 3D-Modellierung einer 
+  Siebträger-Kaffeemaschine in Autodesk Maya. Das Modell wurde aus 
+  primitiven Grundkörpern entwickelt und mithilfe von Tools wie 
+  Bevel und Extrude strukturell ausgearbeitet.
+</p>
+
+<p>
+  Materialien und Texturen wurden im ursprünglichen Projekt angelegt, 
+  konnten jedoch bei der Web-Integration nicht vollständig übernommen werden. 
+  In der aktuellen Darstellung fehlt zudem eine untere Plane – 
+  vermutlich bedingt durch den Exportprozess.
+</p>
+<p>
+Rückblickend hat mir dieses Projekt besonders viel Freude bereitet.
+Während des Modellierungsprozesses bin ich mehrfach in technische „Sackgassen“ geraten und musste Lösungswege neu denken. Gerade diese Herausforderungen haben jedoch mein Verständnis für 3D-Strukturen und Workflows deutlich vertieft.
+Maya war anfangs anspruchsvoll, aber genau das macht für mich den Reiz aus – 3D-Objekte zu erschaffen und Design in räumliche Form zu übersetzen.
+</p>
+              
                 </div>
               </div>
             </section>
@@ -349,19 +359,20 @@ useEffect(() => {
     <div className="helsinkiCard">
       {/* TEXT LINKS */}
       <div className="helsinkiContent">
-        <h4>Studienreise mit der HTW Berlin</h4>
+       <h3>Oktober/November 2025</h3>
 
-        <p>
-          Im aktuellen Semester nahm ich an einer Studienreise nach Helsinki teil.
-          Ziel war es, internationale Einblicke in digitale Innovation,
-          Designkultur und Hochschulstrukturen zu gewinnen.
-        </p>
+<p>
+  Im Oktober/November 2025 nahm ich mit der HTW Berlin an einer Studienreise 
+  nach Helsinki (Finnland) teil. Ziel war es, Einblicke in die finnische 
+  Games- und Innovationsszene sowie in aktuelle Entwicklungen im Bereich 
+  Virtual Reality zu gewinnen.
+</p>
 
-        <ul>
-          <li>Austausch mit Studierenden und Lehrenden vor Ort</li>
-          <li>Einblicke in nordisches Design und UX-Kultur</li>
-          <li>Besuch von Universitäten und Innovationszentren</li>
-        </ul>
+<ul>
+  <li>Besuch von Spieleunternehmen wie Futureplay</li>
+  <li>Austausch zu Produktionsprozessen und Game-Design-Workflows</li>
+  <li>Einblicke in universitäre VR-Forschung und immersive Technologien</li>
+</ul>
       </div>
 
       {/* SLIDER RECHTS */}
@@ -393,17 +404,17 @@ useEffect(() => {
                 <div className="projectContent">
                   <h4>Web-Applikation zur Verwaltung von VR-Equipment am Campus</h4>
                   <p>
-                    Entwicklung einer webbasierten Anwendung für den Campus der HTW Berlin
-                    mit dem Ziel, VR-Equipment digital verwaltbar und effizient ausleihbar
-                    zu machen.
+                    Konzeption und Entwicklung einer webbasierten Anwendung zur digitalen Organisation und Ausleihe von VR-Equipment an der HTW Berlin.
+Das Projekt wurde in einem dreiköpfigen Team realisiert – mit Fokus auf strukturierte Prozesse, Nutzerführung und technische Skalierbarkeit.
                   </p>
 
                   <ul>
                     <li>Konzeption einer strukturierten Ausleih-Logik</li>
                     <li>Frontend-Entwicklung mit React & TypeScript</li>
                     <li>Komponentenbasierte Architektur</li>
-                    <li>UI/UX-Design und Prototyping</li>
-                    <li>Optimierung der Nutzerführung</li>
+                    <li>Rollenbasierte Admin-Oberfläche mit separater UX-Datenbank</li>
+                    <li>Automatisierter E-Mail-Agent zur Bestätigung und Verwaltung von Ausleihvorgängen</li>
+                    <li>UI/UX-Design, Prototyping und Optimierung der Nutzerführung</li>
                   </ul>
                 </div>
               </div>
