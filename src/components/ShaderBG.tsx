@@ -19,7 +19,7 @@ export default function ShaderBG() {
           color2="#839fdb"
           color3="#7179a8"
           envPreset="city"
-          grain="on"
+          grain="off"
           lightType="3d"
           positionX={-1.4}
           positionY={0}

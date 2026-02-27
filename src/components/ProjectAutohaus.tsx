@@ -1,10 +1,7 @@
 export default function ProjectAutohaus() {
   return (
     <section className="section" id="autohaus">
-      <h2>Projekt: Autohaus-Website</h2>
-      <p className="muted">
-        Design & Umsetzung einer modernen Website inkl. Fahrzeugbestand, Finanzierung und Kontakt.
-      </p>
+      <h3>Auto Wallstein – Webentwicklung & UI</h3>
 
       <div className="projectGrid">
         {/* Browser-Fenster */}
@@ -36,9 +33,11 @@ export default function ProjectAutohaus() {
         {/* Text / Fakten */}
         <div className="projectFacts">
           <ul className="bullets">
-            <li><strong>Fokus:</strong> klares UI, Conversion (Kontakt/Anfrage), mobile first</li>
-            <li><strong>Module:</strong> Fahrzeugbestand, Finanzierung, Kontakt & Anfahrt</li>
-            <li><strong>Extras:</strong> Export & Zulassung Info-Bereich</li>
+            <li><strong>Motivation:</strong> Für das Autohaus in Heusenstamm wurde eine neue, moderne Website entwickelt, 
+    die die Markenidentität klar repräsentiert und zugleich barrierearme Nutzung ermöglicht.</li>
+            <li><strong>Fokus:</strong> Mordenes Design, Barrierefreiheit, responsive Gestaltung</li>
+            <li><strong>Features:</strong> Fahrzeugbestand, Finanzierung, Kontakt & Anfahrt</li>
+            <li><strong>Extras:</strong> Export & Zulassung und Historie</li>
           </ul>
 
           <div className="cta">
