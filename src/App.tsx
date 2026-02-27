@@ -286,6 +286,35 @@ useEffect(() => {
         <section id="projects" className="section">
           <h3>Woran ich gearbeitet habe ✨ </h3>
 
+<AnimatedSection className="hero">
+  <section className="section">
+
+    <div className="wipCard">
+      <div className="wipTop">
+        <div>
+          <h3 className="wipTitle">In the Making- Haarstudio 6 — Webseite (Heusenstamm)</h3>
+          <p className="wipSub">
+            Gerade im Aufbau: Design, Struktur & Frontend. Launch folgt bald.
+          </p>
+        </div>
+
+        <span className="wipBadge" aria-label="Work in Progress">
+          WIP
+        </span>
+      </div>
+
+      <div className="wipMeta">
+        <span className="wipDot" />
+        <span className="wipText">Building…</span>
+      </div>
+
+      <div className="wipProgress" aria-hidden="true">
+        <div className="wipBar" />
+      </div>
+    </div>
+  </section>
+</AnimatedSection>
+
           <AnimatedSection className="hero">
             <ProjectAutohaus />
           </AnimatedSection>
