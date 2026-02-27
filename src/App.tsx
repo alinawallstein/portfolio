@@ -292,14 +292,14 @@ useEffect(() => {
     <div className="wipCard">
       <div className="wipTop">
         <div>
-          <h3 className="wipTitle">In the Making- Haarstudio 6 — Webseite (Heusenstamm)</h3>
+          <h3 className="wipTitle">Haarstudio 6 — Webseite in Entwicklung</h3>
           <p className="wipSub">
             Gerade im Aufbau: Design, Struktur & Frontend. Launch folgt bald.
           </p>
         </div>
 
         <span className="wipBadge" aria-label="Work in Progress">
-          WIP
+          Work in Progress
         </span>
       </div>
 
