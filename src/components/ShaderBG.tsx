@@ -15,9 +15,9 @@ export default function ShaderBG() {
           cDistance={3.6}
           cPolarAngle={90}
           cameraZoom={1}
-          color1="#1a03c8"
-          color2="#0b85ff"
-          color3="#132597"
+          color1="#1500b6"
+          color2="#005fbe"
+          color3="#00107a"
           envPreset="city"
           grain="off"
           lightType="3d"
