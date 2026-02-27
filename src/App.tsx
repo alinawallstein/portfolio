@@ -8,6 +8,7 @@ import { useEffect, useState, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import HelsinkiSlider from "./components/HelsinkiSlider";
 import CGVideoViewer from "./components/CGVideoViewer";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function Navbar() {
@@ -501,6 +502,7 @@ Integration moderner Web-Tools</p>
           <p>© {new Date().getFullYear()} Alina Wallstein</p>
         </section>
       </main>
+      <ScrollToTop />
     </>
   );
 }
