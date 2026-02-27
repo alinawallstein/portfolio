@@ -482,7 +482,9 @@ Integration moderner Web-Tools</p>
         <section id="contact" className="section">
           <h3>Contact</h3>
           <div className="card">
-            <p>Kontakt: alinawallstein8@gmail.com</p>
+            <p>E-mail: alinawallstein8@gmail.com</p>
+            <p>Telefon: +49 162 8777077</p>
+            <p>Linked In: https://www.linkedin.com/in/alinawallstein </p>
           </div>
         </section>
 
