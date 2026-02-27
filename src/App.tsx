@@ -112,7 +112,7 @@ useEffect(() => {
                 Studentin im Studiengang Internationale Medieninformatik an der Hochschule für Technik und Wirtschaft Berlin (HTW Berlin), mit Fokus auf moderne Frontend-Entwicklung (React), 3D-Webtechnologien und UI/UX-Konzeption.
               </p>
               <a 
-                  href="/Alina_Wallstein_Lebenslauf.pdf" 
+                  href="/AlinaWallsteinLebenslauf.pdf" 
                   download
                   className="cvButton"
                 >
