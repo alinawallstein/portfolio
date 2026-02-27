@@ -19,7 +19,7 @@ export default function IntroShader() {
     fov: 45,
     frameRate: 10,
     gizmoHelper: "hide",
-    grain: "off",
+    grain: "on",
     lightType: "3d",
     pixelDensity: 1,
     positionX: -1.4,
