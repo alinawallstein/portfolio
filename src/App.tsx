@@ -7,6 +7,7 @@ import IntroShader from "./components/IntroShader";
 import { useEffect, useState, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import HelsinkiSlider from "./components/HelsinkiSlider";
+import CGVideoViewer from "./components/CGVideoViewer";
 
 
 function Navbar() {
@@ -315,6 +316,34 @@ useEffect(() => {
     </div>
   </section>
 </AnimatedSection>
+          <AnimatedSection className="hero">
+<section className="section">
+  <h3>Computergrafik – GLSL Demo</h3>
+
+  <div className="projectCard">
+    <CGVideoViewer />
+
+    <div className="projectContent">
+      <h4>Shader / Java / GLSL</h4>
+      <p>
+        Im Rahmen des Moduls Computergrafik entstand eine interaktive 3D-Szene mit Java und GLSL, bestehend aus mehreren unterschiedlich geformten, vollwertigen 3D-Objekten.
+
+Ein Objekt wurde vollständig über selbst definierte Koordinaten konstruiert, während ein weiteres programmatisch generiert bzw. aus einer externen Objektdatei geladen wurde. Die Szene nutzt kontinuierliche Transformationen (Translation, Rotation, Skalierung) zur Animation aller Elemente.
+
+Ein hierarchisches Transformationssystem wurde implementiert, sodass sich ein Objekt relativ zum lokalen Koordinatensystem eines anderen bewegt (vergleichbar mit einem Planeten-Mond-System).
+      </p>
+      <ul>
+        <li>Mehrere 3D-Objekte mit unterschiedlicher Geometrie</li>
+        <li>Hierarchische Transformationen (Parent-Child-System)</li>
+        <li>Zwei separate Vertex- und Fragment-Shader</li>
+        <li>Implementierung von Phong-Schattierung</li>
+        <li>Demonstration von Over- und Undersampling</li>
+        <li>Einsatz verschiedener Filtermethoden (ungefiltert vs. bilinear)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+  </AnimatedSection>
 
           <AnimatedSection className="hero">
             <ProjectAutohaus />
@@ -428,12 +457,13 @@ Das Projekt wurde in einem dreiköpfigen Team realisiert – mit Fokus auf struk
           <div className="grid">
             <div className="skillBox">
               <h4>Frontend</h4>
-              <p>React, TypeScript, HTML5, CSS3</p>
+              <p>React, TypeScript, HTML5, CSS3, interaktive Interfaces, Animationen,
+Integration moderner Web-Tools</p>
             </div>
 
             <div className="skillBox">
               <h4>3D & Interactive</h4>
-              <p>Three.js, WebGL, Shader Development</p>
+              <p>Three.js, GLSL, Shader Development, Autodesk Maya</p>
             </div>
 
             <div className="skillBox">
