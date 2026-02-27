@@ -367,3 +367,25 @@ body {
   background: rgba(131,159,219,0.65);
   box-shadow: 0 0 22px rgba(131,159,219,0.35);
 }
+.cvButton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+
+  border-radius: 999px;
+  text-decoration: none;
+
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+
+  color: white;
+  font-size: 14px;
+
+  transition: all 0.2s ease;
+}
+
+.cvButton:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.18);
+}
