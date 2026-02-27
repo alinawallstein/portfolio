@@ -6,6 +6,7 @@ import AnimatedSection from "./components/AnimatedSection";
 import IntroShader from "./components/IntroShader";
 import { useEffect, useState, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import HelsinkiSlider from "./components/HelsinkiSlider";
 
 
 function Navbar() {
@@ -341,32 +342,42 @@ useEffect(() => {
               </div>
             </section>
           </AnimatedSection>
+<AnimatedSection className="hero">
+  <section className="section">
+    <h3>Studienreise – Helsinki (Finnland)</h3>
 
-          <AnimatedSection className="hero">
-            <section className="section">
-              <h3>Studienreise – Helsinki (Finnland)</h3>
+    <div className="helsinkiCard">
+      {/* TEXT LINKS */}
+      <div className="helsinkiContent">
+        <h4>Studienreise mit der HTW Berlin</h4>
 
-              <div className="helsinkiCard">
-                <div className="helsinkiContent">
-                  <h4>Studienreise mit der HTW Berlin</h4>
-                  <p>
-                    Im aktuellen Semester nahm ich an einer Studienreise nach Helsinki teil.
-                    Ziel war es, internationale Einblicke in digitale Innovation,
-                    Designkultur und Hochschulstrukturen zu gewinnen.
-                  </p>
-                  <ul>
-                    <li>Austausch mit Studierenden und Lehrenden vor Ort</li>
-                    <li>Einblicke in nordisches Design und UX-Kultur</li>
-                    <li>Besuch von Universitäten und Innovationszentren</li>
-                  </ul>
-                </div>
+        <p>
+          Im aktuellen Semester nahm ich an einer Studienreise nach Helsinki teil.
+          Ziel war es, internationale Einblicke in digitale Innovation,
+          Designkultur und Hochschulstrukturen zu gewinnen.
+        </p>
 
-                <div className="helsinkiGallery">
-                  <img src="/helsinki.jpg" alt="Helsinki Impression" />
-                </div>
-              </div>
-            </section>
-          </AnimatedSection>
+        <ul>
+          <li>Austausch mit Studierenden und Lehrenden vor Ort</li>
+          <li>Einblicke in nordisches Design und UX-Kultur</li>
+          <li>Besuch von Universitäten und Innovationszentren</li>
+        </ul>
+      </div>
+
+      {/* SLIDER RECHTS */}
+      <div className="helsinkiGallery">
+        <HelsinkiSlider
+          autoPlayMs={0} // z.B. 3500 für Autoplay
+          images={[
+            { src: "/helsinki.jpg", alt: "Helsinki – Impression 1" },
+            { src: "/helsinki1.jpeg", alt: "Helsinki – Impression 2" },
+            { src: "/helsinki2.jpg", alt: "Helsinki – Impression 3" },
+          ]}
+        />
+      </div>
+    </div>
+  </section>
+</AnimatedSection>
 
           <AnimatedSection className="hero">
             <section className="section">

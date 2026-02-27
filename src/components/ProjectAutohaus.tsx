@@ -42,8 +42,13 @@ export default function ProjectAutohaus() {
           </ul>
 
           <div className="cta">
-            <a className="btn primary" href="https://autowallstein.netlify.app/" target="_blank" rel="noreferrer">
-              Live ansehen
+           <a
+            href="https://autowallstein.netlify.app/"  
+            target="_blank"
+            rel="noopener noreferrer"
+            className="projectButton"
+            >   
+            Website ansehen →
             </a>
           </div>
         </div>
