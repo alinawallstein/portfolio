@@ -497,7 +497,7 @@ body {
 .navBrand{
   display: inline-flex;
   align-items: baseline;
-  gap: 3px;
+  gap: 2.5px;
   text-decoration: none;
   color: white;
   letter-spacing: 0.2px;
