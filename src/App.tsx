@@ -11,30 +11,44 @@ import { AnimatePresence, motion } from "framer-motion";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
-
-  const closeMenu = useCallback(() => setOpen(false), []);
+  const [active, setActive] = useState("about");
 
   useEffect(() => {
-    const onResize = () => {
-      if (window.innerWidth > 820) setOpen(false);
+    const sections = document.querySelectorAll("section[id]");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: "-40% 0px -50% 0px",
+        threshold: 0
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
     };
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
   }, []);
+
+  const closeMenu = () => setOpen(false);
 
   return (
     <header className="navWrap">
       <nav className="navBar">
-        <a className="navBrand" href="#top" onClick={closeMenu}>
+        <a href="#top" className="navBrand" onClick={closeMenu}>
           Alina
         </a>
 
         <button
-          type="button"
           className="navBurger"
-          aria-label={open ? "Menü schließen" : "Menü öffnen"}
-          aria-expanded={open}
-          onClick={() => setOpen((prev) => !prev)}
+          onClick={() => setOpen(!open)}
         >
           <span />
           <span />
@@ -42,16 +56,42 @@ function Navbar() {
         </button>
 
         <div className={`navLinks ${open ? "open" : ""}`}>
-          <a href="#about" onClick={closeMenu}>About</a>
-          <a href="#projects" onClick={closeMenu}>Projects</a>
-          <a href="#skills" onClick={closeMenu}>Skills</a>
-          <a href="#contact" onClick={closeMenu}>Contact</a>
+          <a
+            href="#about"
+            className={active === "about" ? "active" : ""}
+            onClick={closeMenu}
+          >
+            About
+          </a>
+
+          <a
+            href="#projects"
+            className={active === "projects" ? "active" : ""}
+            onClick={closeMenu}
+          >
+            Projects
+          </a>
+
+          <a
+            href="#skills"
+            className={active === "skills" ? "active" : ""}
+            onClick={closeMenu}
+          >
+            Skills
+          </a>
+
+          <a
+            href="#contact"
+            className={active === "contact" ? "active" : ""}
+            onClick={closeMenu}
+          >
+            Contact
+          </a>
         </div>
       </nav>
     </header>
   );
 }
-
 export default function App() {
   const [showIntro, setShowIntro] = useState(true);
 
