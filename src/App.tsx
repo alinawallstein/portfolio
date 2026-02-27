@@ -214,7 +214,7 @@ useEffect(() => {
                 }}
                 transition={{ duration: 0.9, ease: "easeOut" }}
               >
-                Studentin: internationale Medieninformatik | Frontend Development | 3D-Webtechnologien | UI/UX-Konzeption
+                Studentin: internationale Medieninformatik | Full-Stack-Development | 3D-Webtechnologien | UI/UX-Konzeption
               </motion.p>
 
               <motion.div
@@ -249,10 +249,9 @@ useEffect(() => {
           <div className="heroContent">
             <div className="heroText">
               <h1>Alina Wallstein</h1>
-              <h2>Frontend Developer & Creative Technologist</h2>
+              <h2>Creative Developer & Media Informatics Student</h2>
               <p>
-                Studentin im Studiengang Internationale Medieninformatik an der Hochschule für Technik und Wirtschaft Berlin (HTW Berlin),
-                mit Fokus auf moderne Frontend-Entwicklung (React), 3D-Webtechnologien und UI/UX-Konzeption.
+                Ich studiere Internationale Medieninformatik an der HTW Berlin und bin aktuell im 3./4. Semester. Besonders spannend finde ich die Schnittstelle zwischen Gestaltung und Programmierung – von React-basierten Frontends bis hin zu 3D-Webprojekten und UI/UX-Konzepten. Gebürtig aus Frankfurt am Main, liebe ich es, Ideen nicht nur zu denken, sondern sie digital umzusetzen.
               </p>
 
               <a href="/AlinaWallsteinLebenslauf1.pdf" download className="cvButton">
@@ -272,7 +271,7 @@ useEffect(() => {
 
         {/* (Optional) Akademische Leistungen */}
         <section className="section">
-          <h3>Akademische Leistungen – Aktuelles Semester 25/26</h3>
+          <h3>Was ich im Wintersemester 25/26 vertieft habe 👩🏻‍💻</h3>
           <div className="card">
             <ul>
               <li>Vertiefte Auseinandersetzung mit Autodesk Maya (Hard-Surface Modeling, Topologie, Rendering)</li>
@@ -285,7 +284,7 @@ useEffect(() => {
 
         {/* PROJECTS */}
         <section id="projects" className="section">
-          <h3>Projects</h3>
+          <h3>Woran ich gearbeitet habe ✨ </h3>
 
           <AnimatedSection className="hero">
             <ProjectAutohaus />
