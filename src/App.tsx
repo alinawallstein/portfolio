@@ -257,7 +257,7 @@ useEffect(() => {
                 Ich studiere Internationale Medieninformatik an der HTW Berlin und bin aktuell im 3./4. Semester. Besonders spannend finde ich die Schnittstelle zwischen Gestaltung und Programmierung – von React-basierten Frontends bis hin zu 3D-Webprojekten und UI/UX-Konzepten. Gebürtig aus Frankfurt am Main, liebe ich es, Ideen nicht nur zu denken, sondern sie digital umzusetzen.
               </p>
 
-              <a href="/alinawallsteinslebenslauf.pdf" download className="cvButton">
+              <a href="/alina.wallsteim.lebenslauf.pdf" download className="cvButton">
                 Lebenslauf als PDF herunterladen
               </a>
             </div>
