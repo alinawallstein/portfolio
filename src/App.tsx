@@ -488,7 +488,7 @@ Integration moderner Web-Tools</p>
          <p className="contactItem">
   <span className="contactLabel">LinkedIn: </span>
   <a
-    href="https://www.linkedin.com/in/alinawallstein"
+    href="https://www.linkedin.com/in/alina-wallstein"
     target="_blank"
     rel="noopener noreferrer"
   >
