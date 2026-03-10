@@ -492,7 +492,7 @@ Integration moderner Web-Tools</p>
     target="_blank"
     rel="noopener noreferrer"
   >
-    linkedin.com/in/alinawallstein
+    linkedin.com/in/alina-wallstein
   </a>
 </p>
           </div>
